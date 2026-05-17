@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shrestha Photo Production</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:black;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:red;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('background.jpg');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+max-width:700px;
+line-height:1.8;
+color:#ddd;
+}
+
+.hero-content button{
+margin-top:30px;
+padding:14px 35px;
+border:none;
+background:red;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* GALLERY */
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin:70px 0 40px;
+}
+
+.gallery{
+width:90%;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:15px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+/* PACKAGE */
+
+.packages{
+width:90%;
+margin:70px auto;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.package-card{
+background:#1c1c1c;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.package-card h2{
+margin-bottom:15px;
+}
+
+.price{
+font-size:40px;
+color:red;
+margin-bottom:20px;
+font-weight:bold;
+}
+
+.package-card ul{
+list-style:none;
+line-height:2;
+color:#ccc;
+}
+
+.package-card button{
+margin-top:25px;
+padding:12px 28px;
+border:none;
+background:red;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* CLIENT SECTION */
+
+.client{
+width:90%;
+margin:80px auto;
+background:#1b1b1b;
+padding:50px;
+border-radius:20px;
+text-align:center;
+}
+
+.client h2{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.client p{
+max-width:800px;
+margin:auto;
+line-height:1.8;
+color:#bbb;
+}
+
+/* CONTACT */
+
+.contact{
+width:90%;
+margin:70px auto;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.contact-form{
+background:#1c1c1c;
+padding:35px;
+border-radius:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:14px;
+margin:12px 0;
+background:#111;
+border:none;
+color:white;
+border-radius:10px;
+}
+
+.contact-form button{
+width:100%;
+padding:14px;
+border:none;
+background:red;
+color:white;
+font-size:17px;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
+margin-top:50px;
+background:black;
+padding:25px;
+text-align:center;
+color:#999;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:42px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+SHRESTHA PHOTO PRODUCTION 
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#gallery">Portfolio</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>SHRESTHA PHOTO PRODUCTION</h1>
+
+<p>
+Professional Wedding Photography & Cinematic Videography
+</p>
+
+<a href="booking.html" class="book-btn">BOOK NOW</a>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<h2 class="section-title" id="gallery">
+OUR WORK
+</h2>
+
+<section class="gallery">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+
+</section>
+
+<!-- PACKAGES -->
+
+<h2 class="section-title" id="packages">
+WEDDING PACKAGES
+</h2>
+
+<section class="packages">
+
+<div class="package-card">
+
+<h2>Basic</h2>
+
+<div class="price">
+Rs. 60,000
+</div>
+
+<ul>
+<li>1 Photographer</li>
+<li>1 Videographer</li>
+<li>Album Included</li>
+<li>Edited Photos</li>
+</ul>
+
+<button>Send Quotation</button>
+
+</div>
+
+<div class="package-card">
+
+<h2>Premium</h2>
+
+<div class="price">
+Rs. 1,20,000
+</div>
+
+<ul>
+<li>2 Photographers</li>
+<li>2 Videographers</li>
+<li>Drone Included</li>
+<li>Cinematic Video</li>
+</ul>
+
+<button>Send Quotation</button>
+
+</div>
+
+</section>
+
+<!-- CLIENT -->
+
+<section class="client">
+
+<h2>CLIENT GALLERY</h2>
+
+<p>
+Every moment tells a story. We preserve your wedding memories beautifully so you can relive them forever.
+</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<h2 class="section-title" id="contact">
+CONTACT US
+</h2>
+
+<section class="contact">
+
+<div>
+
+<h2 style="margin-bottom:20px;">
+Book Your Wedding
+</h2>
+
+<p style="line-height:2;color:#bbb;">
+
+Shrestha Photo Production<br><br>
+
+Wedding Photography<br>
+Cinematic Videography<br>
+Pre Wedding Shoot<br><br>
+
+📞 +977-9805882557<br>
+📧 shresthaphotoproduction@gmail.com
+
+</p>
+
+</div>
+
+<div class="contact-form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<input type="text" placeholder="Wedding Date">
+
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button>
+Send Inquiry
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Shrestha Photo Production
+
+</footer>
+
+</body>
+</html>

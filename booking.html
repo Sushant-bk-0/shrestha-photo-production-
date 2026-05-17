@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking Page</title>
+
+<style>
+body{
+font-family: Arial;
+background:#222;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.box{
+background:#333;
+padding:30px;
+border-radius:10px;
+width:300px;
+}
+
+input, textarea{
+width:100%;
+margin:8px 0;
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:red;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Book Now</h2>
+
+<input type="text" placeholder="Name">
+<input type="text" placeholder="Phone">
+<input type="text" placeholder="Date">
+
+<textarea placeholder="Message"></textarea>
+
+<button onclick="send()">Send</button>
+
+<br><br>
+
+<a href="index.html" style="color:white;">Back</a>
+
+</div>
+
+<script>
+function send(){
+let phone = "9779805882557";
+let msg = "New Booking Request";
+
+let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
+
+window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
